@@ -3,7 +3,7 @@ uses SysUtils;
 
 type
   WrongWords = (swiming, runing, stoping, hiting, begining)
-  count_WrongWords = array of [WrongWords] of integer
+  count_WrongWords = array of [WrongWords] of string;
 var
   count: integer;
   inputStr, word: string;
