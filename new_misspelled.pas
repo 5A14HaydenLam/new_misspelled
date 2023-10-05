@@ -5,8 +5,9 @@ type
   WrongWords = (swiming, runing, stoping, hiting, begining)
   count_WrongWords = array of [WrongWords] of string;
 var
+  i: integer;
   count: integer;
-  inputStr, word: string;
+  inputStr: string;
   upper_limit : integer;
   lower_limit : integer;
 begin
@@ -18,9 +19,9 @@ begin
   readln(inputStr);
   count_WrongWords := inputStr.Split(' ');
 
-  for word in count_WrongWords do
+  for i:=0 to 4 do
   begin
-    if word = count_WrongWords then
+    if inputStr:= count_WrongWords[i] then
       count := count+1;
 
   end;
